@@ -18,6 +18,9 @@ w_word_2400_csv = "D:/05.japanproject/jp/freq/w_word_2400.csv"
 w_word_2400_with_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_with_guide.csv"
 w_word_2400_without_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_without_guide.csv"
 
+# JLPT 难易度词汇
+r_jlpt_csv = "D:/05.japanproject/jp/freq/r_jlpt.csv"
+w_jlpt_csv = "D:/05.japanproject/jp/freq/w_jlpt.csv"
 
 
 #原始解压的nlt书面语词频文件
@@ -74,6 +77,9 @@ def to_csv_sig(df,path,need_index=False):
 
 def read_excel(path,sheet_name):
     return pd.read_excel(path, sheet_name=sheet_name)
+
+
+
 
 
 def p(ob):
