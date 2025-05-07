@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import chardet
 import re
+from itertools import islice
+
 
 # 解析书面语正则
 pattern_table_written = re.compile(r"<table[\s\S]+?>[\s\S]+?<\/table>")
@@ -23,6 +25,7 @@ r_jlpt_csv = "D:/05.japanproject/jp/freq/r_jlpt.csv"
 w_jlpt_csv = "D:/05.japanproject/jp/freq/w_jlpt.csv"
 
 
+#---------------------------书面语---------------------------------
 #原始解压的nlt书面语词频文件
 r_written_freq_nlt_with_enter_txt = "D:/05.japanproject/jp/freq/r_written_freq_nlt_with_enter.txt"
 #格式化后的的书面语词频文件
@@ -30,6 +33,8 @@ w_written_freq_nlt_with_enter_csv = "D:/05.japanproject/jp/freq/w_written_freq_n
 #格式化后分组汇总后的书面语词频文件(因为词语有重复)
 w_written_freq_nlt_sumed_csv = "D:/05.japanproject/jp/freq/w_written_freq_nlt_sumed.csv"
 
+
+#---------------------------口语---------------------------------
 #原始解压的nlb口语词频文件
 r_spoken_freq_nlb_with_enter_txt = "D:/05.japanproject/jp/freq/r_spoken_freq_nlt_with_enter.txt"
 #格式化后的的口语词频文件
@@ -38,24 +43,19 @@ w_spoken_freq_nlb_with_enter_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb
 w_spoken_freq_nlb_with_enter_filtered_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_with_enter_filtered.csv"
 #增加headword-reading-type字段后的的口语词频文件
 w_spoken_freq_nlb_with_enter_filtered_hrt_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_with_enter_filtered_hrt.csv"
-
 #对headword, reading字段分组后的语词频文件
 w_spoken_freq_nlb_with_enter_filtered_hr_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_with_enter_filtered_hr.csv"
-
 #格式化后分组汇总后的口语词频文件
 w_spoken_freq_nlb_sumed_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_sumed.csv"
 
-
+#---------------------------合并书面语和口语---------------------------------
 #书面语和口语词汇汇总数据
 w_merged_freq_sumed_csv = "D:/05.japanproject/jp/freq/w_merged_freq_sumed.csv"
+#原始--书面语和口语词汇汇总数据
+w_raw_merged_freq_sumed_csv = "D:/05.japanproject/jp/freq/w_raw_merged_freq_sumed.csv"
 
 # 临时文件
 w_tmp_csv = "D:/05.japanproject/jp/freq/w_tmp_csv.csv"
-
-
-
-
-
 
 
 # 将日文字符转换为unicode编码
@@ -79,11 +79,20 @@ def read_excel(path,sheet_name):
     return pd.read_excel(path, sheet_name=sheet_name)
 
 
+def fetch_random_from_set(my_set,n=5):
+    print(list(islice(my_set,n)))
+    
+
+
 
 
 
 def p(ob):
     print(ob)
+def l(ob=""):
+    s = "-" * 40
+    print(f'{s}{ob}{s}')
+
 
 
 
