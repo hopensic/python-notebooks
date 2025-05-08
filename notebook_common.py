@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import chardet
 import re
 from itertools import islice
@@ -19,10 +20,15 @@ r_word_2400_xlsx = "D:/05.japanproject/jp/freq/r_word_2400.xlsx"
 w_word_2400_csv = "D:/05.japanproject/jp/freq/w_word_2400.csv"
 w_word_2400_with_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_with_guide.csv"
 w_word_2400_without_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_without_guide.csv"
+r_final_word_2400_with_freq_csv = "D:/05.japanproject/jp/freq/final/r_final_word_2400_with_freq.csv"
+w_final_word_2400_with_freq_and_level_csv = "D:/05.japanproject/jp/freq/final/w_final_word_2400_with_freq_and_level.csv"
+
+
 
 # JLPT 难易度词汇
 r_jlpt_csv = "D:/05.japanproject/jp/freq/r_jlpt.csv"
 w_jlpt_csv = "D:/05.japanproject/jp/freq/w_jlpt.csv"
+w_jlpt_word_csv = "D:/05.japanproject/jp/freq/w_jlpt_word.csv"
 
 
 #---------------------------书面语---------------------------------
