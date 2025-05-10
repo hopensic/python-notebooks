@@ -14,6 +14,9 @@ pattern_td_written = re.compile(r"<td><span class=\"\w+\">(.+?)[\s]?</span></td>
 pattern_table_spoken = re.compile(r"<table[\s\S]+?>[\s\S]+?<\/table>")
 pattern_td_spoken = re.compile(r"<td><span class=\"\w+\">(.+?)[\s]?</span></td>")
 
+#解析音频文件正则
+pattern_voice = re.compile(r"<table[\s\S]+?>[\s\S]+?<\/table>")
+
 
 # 2400 word
 r_word_2400_xlsx = "D:/05.japanproject/jp/freq/r_word_2400.xlsx"
@@ -62,6 +65,12 @@ w_raw_merged_freq_sumed_csv = "D:/05.japanproject/jp/freq/w_raw_merged_freq_sume
 
 # 临时文件
 w_tmp_csv = "D:/05.japanproject/jp/freq/w_tmp_csv.csv"
+#---------------------------音频文件---------------------------------
+r_voice_txt="D:/05.japanproject/jp/freq/Forvo-Japanese.txt"
+r_voice_csv="D:/05.japanproject/jp/freq/final/r_voice.csv"
+
+
+
 
 
 # 将日文字符转换为unicode编码
@@ -95,9 +104,11 @@ def fetch_random_from_set(my_set,n=5):
 
 def p(ob):
     print(ob)
-def l(ob=""):
-    s = "-" * 40
+def l(ob="",len_dash=40):
+    s = "-" * len_dash
     print(f'{s}{ob}{s}')
+
+
 
 
 
