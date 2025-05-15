@@ -20,6 +20,7 @@ pattern_voice = re.compile(r"<table[\s\S]+?>[\s\S]+?<\/table>")
 
 # 2400 word
 r_word_2400_xlsx = "D:/05.japanproject/jp/freq/r_word_2400.xlsx"
+r_word_2400_v2_csv = "D:/05.japanproject/jp/freq/r_word_2400_v2.csv"
 w_word_2400_csv = "D:/05.japanproject/jp/freq/w_word_2400.csv"
 w_word_2400_with_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_with_guide.csv"
 w_word_2400_without_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_without_guide.csv"
@@ -30,8 +31,11 @@ w_final_word_2400_with_freq_and_level_csv = "D:/05.japanproject/jp/freq/final/w_
 
 # JLPT 难易度词汇
 r_jlpt_csv = "D:/05.japanproject/jp/freq/r_jlpt.csv"
+r_jlpt_v2_csv = "D:/05.japanproject/jp/freq/r_jlpt_v2.csv"
 w_jlpt_csv = "D:/05.japanproject/jp/freq/w_jlpt.csv"
 w_jlpt_word_csv = "D:/05.japanproject/jp/freq/w_jlpt_word.csv"
+w_jlpt_multiidx_agg_csv = "D:/05.japanproject/jp/freq/w_jlpt_multiidx_agg.csv"
+
 
 
 #---------------------------书面语---------------------------------
