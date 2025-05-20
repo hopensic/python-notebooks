@@ -17,61 +17,76 @@ pattern_td_spoken = re.compile(r"<td><span class=\"\w+\">(.+?)[\s]?</span></td>"
 #解析音频文件正则
 pattern_voice = re.compile(r"<table[\s\S]+?>[\s\S]+?<\/table>")
 
+#base_url
+base_url="D:/Dropbox/06.wanjuan/02.jp/freq/"
+jlpt_url="D:/Dropbox/06.wanjuan/02.jp/ps/"
+
+
 
 # 2400 word
-r_word_2400_xlsx = "D:/05.japanproject/jp/freq/r_word_2400.xlsx"
-r_word_2400_v2_csv = "D:/05.japanproject/jp/freq/r_word_2400_v2.csv"
-w_word_2400_csv = "D:/05.japanproject/jp/freq/w_word_2400.csv"
-w_word_2400_with_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_with_guide.csv"
-w_word_2400_without_guide_csv = "D:/05.japanproject/jp/freq/w_word_2400_without_guide.csv"
-r_final_word_2400_with_freq_csv = "D:/05.japanproject/jp/freq/final/r_final_word_2400_with_freq.csv"
-w_final_word_2400_with_freq_and_level_csv = "D:/05.japanproject/jp/freq/final/w_final_word_2400_with_freq_and_level.csv"
+r_word_2400_xlsx = base_url+"r_word_2400.xlsx"
+r_word_2400_v2_csv = base_url+"r_word_2400_v2.csv"
+w_word_2400_csv = base_url+"w_word_2400.csv"
+w_word_2400_with_guide_csv = base_url+"w_word_2400_with_guide.csv"
+w_word_2400_without_guide_csv = base_url+"w_word_2400_without_guide.csv"
+r_final_word_2400_with_freq_csv = base_url+"final/r_final_word_2400_with_freq.csv"
+w_final_word_2400_with_freq_and_level_csv = base_url+"final/w_final_word_2400_with_freq_and_level.csv"
 
 
 
 # JLPT 难易度词汇
-r_jlpt_csv = "D:/05.japanproject/jp/freq/r_jlpt.csv"
-r_jlpt_v2_csv = "D:/05.japanproject/jp/freq/r_jlpt_v2.csv"
-w_jlpt_csv = "D:/05.japanproject/jp/freq/w_jlpt.csv"
-w_jlpt_word_csv = "D:/05.japanproject/jp/freq/w_jlpt_word.csv"
-w_jlpt_multiidx_agg_csv = "D:/05.japanproject/jp/freq/w_jlpt_multiidx_agg.csv"
+r_jlpt_csv = base_url+"r_jlpt.csv"
+r_jlpt_v2_csv = base_url+"r_jlpt_v2.csv"
+w_jlpt_csv = base_url+"w_jlpt.csv"
+w_jlpt_word_csv = base_url+"w_jlpt_word.csv"
+w_jlpt_multiidx_agg_csv = base_url+"w_jlpt_multiidx_agg.csv"
+
+#12000JLPT词汇
+r_jlpt_12000_csv = jlpt_url+"r_jlpt_12000.csv"
+w_jlpt_12000_csv = jlpt_url+"w_jlpt_12000.csv"
 
 
 
 #---------------------------书面语---------------------------------
 #原始解压的nlt书面语词频文件
-r_written_freq_nlt_with_enter_txt = "D:/05.japanproject/jp/freq/r_written_freq_nlt_with_enter.txt"
+r_written_freq_nlt_with_enter_txt = base_url+"r_written_freq_nlt_with_enter.txt"
 #格式化后的的书面语词频文件
-w_written_freq_nlt_with_enter_csv = "D:/05.japanproject/jp/freq/w_written_freq_nlt_with_enter.csv"
+w_written_freq_nlt_with_enter_csv = base_url+"w_written_freq_nlt_with_enter.csv"
 #格式化后分组汇总后的书面语词频文件(因为词语有重复)
-w_written_freq_nlt_sumed_csv = "D:/05.japanproject/jp/freq/w_written_freq_nlt_sumed.csv"
+w_written_freq_nlt_sumed_csv = base_url+"w_written_freq_nlt_sumed.csv"
 
 
 #---------------------------口语---------------------------------
 #原始解压的nlb口语词频文件
-r_spoken_freq_nlb_with_enter_txt = "D:/05.japanproject/jp/freq/r_spoken_freq_nlt_with_enter.txt"
+r_spoken_freq_nlb_with_enter_txt = base_url+"r_spoken_freq_nlt_with_enter.txt"
 #格式化后的的口语词频文件
-w_spoken_freq_nlb_with_enter_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_with_enter.csv"
+w_spoken_freq_nlb_with_enter_csv = base_url+"w_spoken_freq_nlb_with_enter.csv"
 #过滤后的的口语词频文件
-w_spoken_freq_nlb_with_enter_filtered_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_with_enter_filtered.csv"
+w_spoken_freq_nlb_with_enter_filtered_csv = base_url+"w_spoken_freq_nlb_with_enter_filtered.csv"
 #增加headword-reading-type字段后的的口语词频文件
-w_spoken_freq_nlb_with_enter_filtered_hrt_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_with_enter_filtered_hrt.csv"
+w_spoken_freq_nlb_with_enter_filtered_hrt_csv = base_url+"w_spoken_freq_nlb_with_enter_filtered_hrt.csv"
 #对headword, reading字段分组后的语词频文件
-w_spoken_freq_nlb_with_enter_filtered_hr_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_with_enter_filtered_hr.csv"
+w_spoken_freq_nlb_with_enter_filtered_hr_csv = base_url+"w_spoken_freq_nlb_with_enter_filtered_hr.csv"
 #格式化后分组汇总后的口语词频文件
-w_spoken_freq_nlb_sumed_csv = "D:/05.japanproject/jp/freq/w_spoken_freq_nlb_sumed.csv"
+w_spoken_freq_nlb_sumed_csv = base_url+"w_spoken_freq_nlb_sumed.csv"
 
 #---------------------------合并书面语和口语---------------------------------
 #书面语和口语词汇汇总数据
-w_merged_freq_sumed_csv = "D:/05.japanproject/jp/freq/w_merged_freq_sumed.csv"
+w_merged_freq_sumed_csv = base_url+"w_merged_freq_sumed.csv"
 #原始--书面语和口语词汇汇总数据
-w_raw_merged_freq_sumed_csv = "D:/05.japanproject/jp/freq/w_raw_merged_freq_sumed.csv"
+w_raw_merged_freq_sumed_csv = base_url+"w_raw_merged_freq_sumed.csv"
 
 # 临时文件
-w_tmp_csv = "D:/05.japanproject/jp/freq/w_tmp_csv.csv"
+w_tmp_csv = base_url+"w_tmp_csv.csv"
+
+
+
+
+
+
 #---------------------------音频文件---------------------------------
-r_voice_txt="D:/05.japanproject/jp/freq/Forvo-Japanese.txt"
-r_voice_csv="D:/05.japanproject/jp/freq/final/r_voice.csv"
+r_voice_txt=base_url+"Forvo-Japanese.txt"
+r_voice_csv=base_url+"final/r_voice.csv"
 
 
 
