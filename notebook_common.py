@@ -75,6 +75,9 @@ w_spoken_freq_nlb_sumed_csv = base_url+"w_spoken_freq_nlb_sumed.csv"
 w_merged_freq_sumed_csv = base_url+"w_merged_freq_sumed.csv"
 #原始--书面语和口语词汇汇总数据
 w_raw_merged_freq_sumed_csv = base_url+"w_raw_merged_freq_sumed.csv"
+#原始--书面语和口语词汇汇总数据-以word作为分组
+w_word_raw_merged_freq_sumed_csv = base_url+"w_word_raw_merged_freq_sumed.csv"
+
 
 # 临时文件
 w_tmp_csv = base_url+"w_tmp_csv.csv"
