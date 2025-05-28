@@ -19,7 +19,7 @@ pattern_voice = re.compile(r"<table[\s\S]+?>[\s\S]+?<\/table>")
 
 #base_url
 base_url="D:/Dropbox/06.wanjuan/02.jp/freq/"
-jlpt_url="D:/Dropbox/06.wanjuan/02.jp/ps/"
+jlpt_url="D:/Dropbox/06.wanjuan/02.jp/pos/"
 
 
 
@@ -44,6 +44,10 @@ w_jlpt_multiidx_agg_csv = base_url+"w_jlpt_multiidx_agg.csv"
 #12000JLPT词汇
 r_jlpt_12000_csv = jlpt_url+"r_jlpt_12000.csv"
 w_jlpt_12000_csv = jlpt_url+"w_jlpt_12000.csv"
+
+#词性字典表
+r_pos_dict_csv = jlpt_url+"r_pos_dict.csv"
+
 
 
 
@@ -77,6 +81,13 @@ w_merged_freq_sumed_csv = base_url+"w_merged_freq_sumed.csv"
 w_raw_merged_freq_sumed_csv = base_url+"w_raw_merged_freq_sumed.csv"
 #原始--书面语和口语词汇汇总数据-以word作为分组
 w_word_raw_merged_freq_sumed_csv = base_url+"w_word_raw_merged_freq_sumed.csv"
+
+
+#---------------------------base_structure---------------------------------
+#发音词频表
+r_pron_freq_csv = base_url+"r_pron_freq.csv"
+
+
 
 
 # 临时文件
