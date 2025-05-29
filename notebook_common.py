@@ -86,8 +86,8 @@ w_word_raw_merged_freq_sumed_csv = base_url+"w_word_raw_merged_freq_sumed.csv"
 #---------------------------base_structure---------------------------------
 #发音词频表
 r_pron_freq_csv = base_url+"r_pron_freq.csv"
-
-
+#基础词频表
+r_base_freq_csv = base_url+"r_base_freq.csv"
 
 
 # 临时文件
