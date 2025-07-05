@@ -20,6 +20,8 @@ pattern_voice = re.compile(r"<table[\s\S]+?>[\s\S]+?<\/table>")
 #base_url
 base_url="D:/Dropbox/06.wanjuan/02.jp/freq/"
 jlpt_url="D:/Dropbox/06.wanjuan/02.jp/pos/"
+course_map_url="D:/Dropbox/06.wanjuan/02.jp/course_map/"
+article_map_url="D:/Dropbox/06.wanjuan/02.jp/article/"
 
 
 
@@ -92,6 +94,46 @@ r_base_freq_csv = base_url+"r_base_freq.csv"
 
 # 临时文件
 w_tmp_csv = base_url+"w_tmp_csv.csv"
+
+
+#---------------------------course_map(课程地图)---------------------------------
+#课程地图单元主表（course_map_unit)
+w_course_map_unit_csv=course_map_url+"w_course_map_unit.csv"
+#关卡表(course_stage)
+w_course_stage_csv=course_map_url+"w_course_stage.csv"
+#五十音表(fifty tones)
+w_fifty_tones_csv=course_map_url+"w_fifty_tones.csv"
+#生词表(new_words)
+w_new_words_csv=course_map_url+"w_new_words.csv"
+#组句句子表(sentence_formation
+w_sentence_formation_csv=course_map_url+"w_sentence_formation.csv"
+#组句句子单词表(sentence_word_formation)
+w_sentence_word_formation_csv=course_map_url+"w_sentence_word_formation.csv"
+#阅读文章表(需要和文章主表关联，通过主键关联)(article_stage_rel)
+w_article_stage_rel_csv=course_map_url+"w_article_stage_rel.csv"
+#闯关问题关联表(需要和问题主表关联，通过主键关联)(question_stage_rel)
+w_question_stage_rel_csv=course_map_url+"w_question_stage_rel.csv"
+
+
+#---------------------------文章句子问题选项---------------------------------
+#日语文章表(article_jap)
+w_article_jap_csv=article_map_url+"w_article_jap.csv"
+#日语文章句子表(article_sentence_jap)
+w_article_sentence_jap_csv=article_map_url+"w_article_sentence_jap.csv"
+#问题表(question_jap)
+w_question_jap_csv=article_map_url+"w_question_jap.csv"
+#问题选项表(article_question_option_jap)
+w_article_question_option_jap_csv=article_map_url+"w_article_question_option_jap.csv"
+
+
+#---------------------------摸底测试问题和选项---------------------------------
+#问题表(modi_question)
+w_modi_question_csv=article_map_url+"w_modi_question.csv"
+#问题选项表(modi_question_option)
+w_modi_question_option_csv=article_map_url+"w_modi_question_option.csv"
+
+
+
 
 
 
