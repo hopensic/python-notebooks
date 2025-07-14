@@ -22,6 +22,7 @@ base_url="D:/Dropbox/06.wanjuan/02.jp/freq/"
 jlpt_url="D:/Dropbox/06.wanjuan/02.jp/pos/"
 course_map_url="D:/Dropbox/06.wanjuan/02.jp/course_map/"
 article_map_url="D:/Dropbox/06.wanjuan/02.jp/article/"
+meaning_url="D:/Dropbox/06.wanjuan/02.jp/meaning/"
 
 
 
@@ -134,7 +135,8 @@ w_modi_question_option_csv=article_map_url+"w_modi_question_option.csv"
 
 
 
-
+#---------------------------词义相关---------------------------------
+simple_meaning_increase_30000_csv=meaning_url+"simple_meaning_increase_30000.csv"
 
 
 
