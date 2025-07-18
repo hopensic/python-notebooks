@@ -137,6 +137,7 @@ w_modi_question_option_csv=article_map_url+"w_modi_question_option.csv"
 
 #---------------------------词义相关---------------------------------
 simple_meaning_increase_30000_csv=meaning_url+"simple_meaning_increase_30000.csv"
+w_merged_130000_simple_meaning_csv=meaning_url+"w_merged_130000_simple_meaning.csv"
 
 
 
