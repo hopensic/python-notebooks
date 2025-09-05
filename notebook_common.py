@@ -114,6 +114,11 @@ w_sentence_word_formation_csv=course_map_url+"w_sentence_word_formation.csv"
 w_article_stage_rel_csv=course_map_url+"w_article_stage_rel.csv"
 #闯关问题关联表(需要和问题主表关联，通过主键关联)(question_stage_rel)
 w_question_stage_rel_csv=course_map_url+"w_question_stage_rel.csv"
+#闯关问题表
+w_breakthrough_question_csv=course_map_url+"w_breakthrough_question.csv"
+#闯关问题选项表
+w_breakthrough_question_option_csv=course_map_url+"w_breakthrough_question_option.csv"
+
 
 
 #---------------------------文章句子问题选项---------------------------------
